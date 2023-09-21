@@ -70,6 +70,11 @@ def update(id):
 	else:
 		return render_template('update.html', task=task, font_url='https://fonts.googleapis.com/css2?family=Syne&display=swap')
 
+
+with app.app_context():
+    db.create_all()
+
+
 # Run the app
 if __name__ == "__main__":
 	app.run(debug=True)

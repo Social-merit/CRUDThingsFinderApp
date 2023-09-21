@@ -10,14 +10,25 @@
 
 {% block body %} 
 
-<div class="content">
+<div class="content mb-4">
 	 
 	{% if tasks|length < 1 %}
 
 	<h4>There are no items to find. Add one below!</h4>
 
 	{% else %}
-
+	<div class="centred">
+		<form action='/' , method='POST'>
+			<div class="input-group mb-3">
+				<input type="text" class="form-control" name="thing" id='thing' , placeholder="Thing">
+				<span class="input-group-text"> And </span>
+				<input type="text" class="form-control" name="location" id='location' , placeholder="Location">
+	
+			</div>
+			
+			<button type="submit" class="btn btn-primary">Add Thing</button>
+			</form>
+			</div>
 
 	<div style="overflow-x:auto">
 		<table class="centred">
@@ -49,18 +60,6 @@
 		</table>
 	</div>
 	{% endif %}
-
-	<br>
-	<hr>
-	<br>
-
-	<div class="centred">
-		<form action='/', method='POST'>
-			<p><input type="text" name="thing" id='thing', placeholder="Thing"></p>
-			<p><input type="text" name="location" id='location', placeholder="Location"></p>
-			<input type="submit" value="Add Task">
-		</form>
-	</div>
 
 </div>
 
