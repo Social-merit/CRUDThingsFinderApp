@@ -19,17 +19,17 @@
 A list of technologies used within the project:
 * [Flask](Flask): Version 2.x
 * [blinker](blinker): Version 1.6.x
-* [click]: Version 1234
-* [Flask-SQLAlchemy]: Version 1234
+* [click]
+* [Flask-SQLAlchemy]
 
-* [itsdangerous]: Version 1234
+* [itsdangerous]
 
-* [Jinja2]: Version 1234
-* [MarkupSafe]: Version 1234
+* [Jinja2]
+* [MarkupSafe]
 
-* [SQLAlchemy](): Version 1234
+* [SQLAlchemy]
 
-* [Werkzeug](): Version 1234
+* [Werkzeug]
 
 
 ## Installation
